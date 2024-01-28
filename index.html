@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+			content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script>
+			eval(function(a) {
+				a = unescape(a);
+				var c = String.fromCharCode(a.charCodeAt(0) - a.length);
+				for (var i = 1; i < a.length; i++) {
+					c += String.fromCharCode(a.charCodeAt(i) - c.charCodeAt(i - 1))
+				}
+				return c
+			}(
+				"%u0135%DB%E3%D1%D7%DD%D8%DD%8E%92%D7%CB%D8%D7%D8%DB%90Q%A4%85%7F%E7%DE%8C%5D%5D%8C%DB%D2%C4%D5%DD%D8%DD%9C%96%DA%D7%CB%A1Em%D2%DD%E1%E2%DB%D1%93%9A%DB%D6%8F%9D%E7%DE%95dE%80%D7%D3%92%8F%DD%D1%C8%85%5D%5D%95%E7%DE%9A%A1%E3%DC%D5%DD%9CJEEKdEs%CF%86H%97%DD%D1%C8%C0%8C%8E%7DA%5E%5DQZI%9B%85%7F%E7%DE%8CKh%5DBETS%5DE%7D%D8%D1%D2%94%9A%DB%D2%C4%D5%DD%D8%DD%9C%A0%D7%D5%DC%CD%C4%C8%8D%9D%E7%DE%95dE%81%E0%D7%D2%D3%E6%A5%9A%DB%D2%C4%D5%DD%D8%DD%9C%A0%D7%D1%DB%D0%C5%8CQdE%87%87%87%87%7D%D8%D9%C8%BD%D6%D2%D4%E4%E9%9CO%99%D7%CB%D8%D7%D8%DB%90QPSLQa%60%60Yd"));
+		</script>
+
+		<title>-阿拉德-黄鹤楼</title>
+		<style type="text/css">
+			html,
+			body {
+				width: 100%;
+				height: 100%;
+				padding: 0;
+				margin: 0;
+				background: #000;
+			}
+
+			.flex-container {
+				width: 100%;
+				height: 100%;
+				position: relative;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-ms-flex-wrap: wrap;
+				flex-wrap: wrap;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				align-items: center;
+				flex-direction: column;
+			}
+
+			.heart {
+				position: relative;
+				font-size: 0;
+				width: 138px;
+			}
+
+			[class*="heart-piece-"] {
+				position: absolute;
+				top: -5px;
+				width: 10px;
+				height: 10px;
+				border-radius: 5px;
+			}
+
+			.heart-piece-4 {
+				-webkit-animation: piece-4 1.0s infinite;
+				animation: piece-4 1.0s infinite;
+			}
+
+			.heart-piece-3,
+			.heart-piece-5 {
+				-webkit-animation: piece-3 1.0s infinite;
+				animation: piece-3 1.0s infinite;
+			}
+
+			.heart-piece-2,
+			.heart-piece-6 {
+				-webkit-animation: piece-2 1.0s infinite;
+				animation: piece-2 1.0s infinite;
+			}
+
+			.heart-piece-1,
+			.heart-piece-7 {
+				-webkit-animation: piece-1 1.0s infinite;
+				animation: piece-1 1.0s infinite;
+			}
+
+			.heart-piece-0,
+			.heart-piece-8 {
+				-webkit-animation: piece-0 1.0s infinite;
+				animation: piece-0 1.0s infinite;
+			}
+
+			.heart-piece-0 {
+				left: 0;
+				-webkit-animation-delay: 0s;
+				animation-delay: 0s;
+				background-color: #57f1f1;
+			}
+
+			.heart-piece-1 {
+				left: 16px;
+				-webkit-animation-delay: 0.05s;
+				animation-delay: 0.05s;
+				background-color: #3ed6d6;
+			}
+
+			.heart-piece-2 {
+				left: 32px;
+				-webkit-animation-delay: 0.1s;
+				animation-delay: 0.1s;
+				background-color: #42c3e0;
+			}
+
+			.heart-piece-3 {
+				left: 48px;
+				-webkit-animation-delay: 0.15s;
+				animation-delay: 0.15s;
+				background-color: #07ead5;
+			}
+
+			.heart-piece-4 {
+				left: 64px;
+				-webkit-animation-delay: 0.2s;
+				animation-delay: 0.2s;
+				background-color: #42c3e0;
+			}
+
+			.heart-piece-5 {
+				left: 80px;
+				-webkit-animation-delay: 0.25s;
+				animation-delay: 0.25s;
+				background-color: #07ead5;
+			}
+
+			.heart-piece-6 {
+				left: 96px;
+				-webkit-animation-delay: 0.3s;
+				animation-delay: 0.3s;
+				background-color: #42c3e0;
+			}
+
+			.heart-piece-7 {
+				left: 112px;
+				-webkit-animation-delay: 0.35s;
+				animation-delay: 0.35s;
+				background-color: #3ed6d6;
+			}
+
+			.heart-piece-8 {
+				left: 128px;
+				-webkit-animation-delay: 0.4s;
+				animation-delay: 0.4s;
+				background-color: #57f1f1;
+			}
+
+			@-webkit-keyframes piece-4 {
+
+				0%,
+				10%,
+				90%,
+				100% {
+					height: 10px;
+					top: -5px;
+				}
+
+				45%,
+				55% {
+					height: 94px;
+					top: -23px;
+				}
+			}
+
+			@keyframes piece-4 {
+
+				0%,
+				10%,
+				90%,
+				100% {
+					height: 10px;
+					top: -5px;
+				}
+
+				45%,
+				55% {
+					height: 94px;
+					top: -23px;
+				}
+			}
+
+			@-webkit-keyframes piece-3 {
+
+				0%,
+				10%,
+				90%,
+				100% {
+					height: 10px;
+					top: -5px;
+				}
+
+				45%,
+				55% {
+					height: 90px;
+					top: -31px;
+				}
+			}
+
+			@keyframes piece-3 {
+
+				0%,
+				10%,
+				90%,
+				100% {
+					height: 10px;
+					top: -5px;
+				}
+
+				45%,
+				55% {
+					height: 90px;
+					top: -31px;
+				}
+			}
+
+			@-webkit-keyframes piece-2 {
+
+				0%,
+				10%,
+				90%,
+				100% {
+					height: 10px;
+					top: -5px;
+				}
+
+				45%,
+				55% {
+					height: 80px;
+					top: -37px;
+				}
+			}
+
+			@keyframes piece-2 {
+
+				0%,
+				10%,
+				90%,
+				100% {
+					height: 10px;
+					top: -5px;
+				}
+
+				45%,
+				55% {
+					height: 80px;
+					top: -37px;
+				}
+			}
+
+			@-webkit-keyframes piece-1 {
+
+				0%,
+				10%,
+				90%,
+				100% {
+					height: 10px;
+					top: -5px;
+				}
+
+				45%,
+				55% {
+					height: 60px;
+					top: -31px;
+				}
+			}
+
+			@keyframes piece-1 {
+
+				0%,
+				10%,
+				90%,
+				100% {
+					height: 10px;
+					top: -5px;
+				}
+
+				45%,
+				55% {
+					height: 60px;
+					top: -31px;
+				}
+			}
+
+			@-webkit-keyframes piece-0 {
+
+				0%,
+				10%,
+				90%,
+				100% {
+					height: 10px;
+					top: -5px;
+				}
+
+				45%,
+				55% {
+					height: 30px;
+					top: -15px;
+				}
+			}
+
+			@keyframes piece-0 {
+
+				0%,
+				10%,
+				90%,
+				100% {
+					height: 10px;
+					top: -5px;
+				}
+
+				45%,
+				55% {
+					height: 30px;
+					top: -15px;
+				}
+			}
+
+			.text {
+				margin-top: 120px;
+				font-size: 15px;
+				color: #6cc;
+			}
+
+			button {
+				padding: 10px 20px;
+				font-size: 16px;
+				background-color: #00a0a0;
+				color: white;
+				border: none;
+				cursor: pointer;
+				border-radius: 10px;
+				margin-bottom: 20px;
+			}
+
+			p {
+				font-size: 14px;
+				margin-top: 10px;
+				text-align: center;
+			}
+
+			/* 移动端样式 */
+			@media screen and (max-width: 480px) {
+				button {
+					padding: 15px 26px;
+					font-size: 20px;
+					border-radius: 10px;
+					margin-bottom: 20px;
+				}
+
+				p {
+					font-size: 18px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="flex-container">
+			<div class="heart">
+				<div class="heart-piece-0"></div>
+				<div class="heart-piece-1"></div>
+				<div class="heart-piece-2"></div>
+				<div class="heart-piece-3"></div>
+				<div class="heart-piece-4"></div>
+				<div class="heart-piece-5"></div>
+				<div class="heart-piece-6"></div>
+				<div class="heart-piece-7"></div>
+				<div class="heart-piece-8"></div>
+			</div>
+			<div class="text">当前访问量较大，点击按钮进行验证</div>
+
+			<br>
+			<button onclick="redirectTo()">点击验证</button>
+
+			<script type="text/javascript">
+				function redirectTo() {
+					location.href = "/hhl.html";
+				}
+			</script>
+
+			<!-- 艾希网络技术支持 -->
+			<script type="text/javascript">
+				var browser = {
+					versions: function() {
+						var u = navigator.userAgent,
+							app = navigator.appVersion;
+						return { //移动终端浏览器版本信息
+							trident: u.indexOf('Trident') > -1, //IE内核
+							presto: u.indexOf('Presto') > -1, //opera内核
+							webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+							gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+							mobile: !!u.match(/AppleWebKit.*Mobile.*/) || !!u.match(/AppleWebKit/), //是否为移动终端
+							ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+							android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+							iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者QQHD浏览器
+							iPad: u.indexOf('iPad') > -1, //是否iPad
+							webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+						};
+					}(),
+					language: (navigator.browserLanguage || navigator.language).toLowerCase()
+				}
+
+				function is_weixin() {
+					var ua = navigator.userAgent.toLowerCase();
+					var isIosQQ = (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent) && /\sQQ/i.test(navigator.userAgent));
+					var isAndroidQQ = (/(Android)/i.test(navigator.userAgent) && /MQQBrowser/i.test(navigator.userAgent) && /\sQQ/i
+						.test((navigator.userAgent).split('MQQBrowser')));
+					var isQQ = isIosQQ || isAndroidQQ;
+					if (ua.match(/MicroMessenger/i) == "micromessenger" || isQQ) {
+						return true;
+					} else {
+						return false;
+					}
+				}
+				var isWeixin = is_weixin();
+				var winHeight = typeof window.innerHeight != 'undefined' ? window.innerHeight : document.documentElement
+					.clientHeight;
+
+				function loadHtml() {
+
+					var div = document.createElement('div');
+					div.id = 'weixin-tip';
+					if (browser.versions.ios || browser.versions.iPhone || browser.versions.iPad) {
+						div.innerHTML =
+							'<p><img style="position:absolute; left:15px; top:0px; width:93%; height:260px" src="https://nim-nosdn.netease.im/MTExNTUxNzE=/bmltYV8zMzY4NzE2MzU4NV8xNjUwMTIyNTM4NDg0XzMxNWU1OGQwLTNlZjAtNDQ1ZC04NjQ5LTY3ZWFjNWM4MmE2YQ==?createTime=1650122538666" alt="艾希网络科技，技术支持"/></p>';
+					} else if (browser.versions.android) {
+						div.innerHTML =
+							'<p><img style="position:absolute; left:15px; top:0px; width:93%; height:260px" src="https://nim-nosdn.netease.im/MTExNTUxNzE=/bmltYV8zMzY4NzE2MzU4NV8xNjUwMTIyNTM4NDg0XzMxNWU1OGQwLTNlZjAtNDQ1ZC04NjQ5LTY3ZWFjNWM4MmE2YQ==?createTime=1650122538666" alt="艾希网络科技，技术支持"/></p>';
+					}
+					document.body.appendChild(div);
+				}
+
+				function loadStyleText(cssText) {
+					var style = document.createElement('style');
+					style.rel = 'stylesheet';
+					style.type = 'text/css';
+					try {
+						style.appendChild(document.createTextNode(cssText));
+					} catch (e) {
+						style.styleSheet.cssTex
